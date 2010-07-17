@@ -8,21 +8,18 @@ Url:		http://remmina.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/project/remmina/%{version}/%{name}-%{version}.tar.gz
 Requires:	reminna
 BuildRequires:	remmina-devel
-#BuildRequires:	gtk2-devel >= 2.16
+BuildRequires:	gtk2-devel >= 2.16
 BuildRequires:	zlib-devel
 BuildRequires:	jpeg-devel
 BuildRequires:	gnutls-devel
 BuildRequires:	libssh-devel >= 0.4
-#BuildRequires:	libavahi-ui-devel
-#BuildRequires:	libvte-devel
-#BuildRequires:	libgcrypt-devel
-#BuildRequires:	unique-devel
+BuildRequires:	libxkbfile-devel
 BuildRequires:	intltool >= 0.35.0
 BuildRequires:	libtelepathy-glib-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
-A set of plugins for remote desktop client - reminna.
+A set of plugins for remote desktop client - remmina.
 
 %prep
 %setup -q
