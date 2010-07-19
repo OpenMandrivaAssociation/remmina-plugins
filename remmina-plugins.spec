@@ -1,12 +1,12 @@
 Summary:	A set of plugins for remmina
 Name:		remmina-plugins
 Version:	0.8.0
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	GPLv2
 Group:		Networking/Remote access
 Url:		http://remmina.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/project/remmina/%{version}/%{name}-%{version}.tar.gz
-Requires:	reminna
+Requires:	remmina
 BuildRequires:	remmina-devel
 BuildRequires:	gtk2-devel >= 2.16
 BuildRequires:	zlib-devel
