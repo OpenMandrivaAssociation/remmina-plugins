@@ -1,6 +1,6 @@
 Summary:	A set of plugins for remmina
 Name:		remmina-plugins
-Version:	0.8.2
+Version:	0.8.3
 Release:	%mkrel 1
 License:	GPLv2
 Group:		Networking/Remote access
@@ -26,8 +26,6 @@ A set of plugins for remote desktop client - remmina.
 %setup -q
 
 %build
-#aclocal
-#autoconf
 %configure2_5x
 %make
 
