@@ -1,6 +1,6 @@
 Summary:	A set of plugins for remmina
 Name:		remmina-plugins
-Version:	0.8.3
+Version:	0.8.4
 Release:	%mkrel 1
 License:	GPLv2
 Group:		Networking/Remote access
