@@ -1,13 +1,13 @@
 Summary:	A set of plugins for remmina
 Name:		remmina-plugins
-Version:	0.8.4
+Version:	0.9.1
 Release:	%mkrel 1
 License:	GPLv2
 Group:		Networking/Remote access
 Url:		http://remmina.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/project/remmina/%{version}/%{name}-%{version}.tar.gz
-Requires:	remmina
-BuildRequires:	remmina-devel
+Requires:	remmina >= 0.9
+BuildRequires:	remmina-devel >= 0.9
 BuildRequires:	gtk2-devel >= 2.16
 BuildRequires:	zlib-devel
 BuildRequires:	jpeg-devel
@@ -15,7 +15,7 @@ BuildRequires:	gnutls-devel
 BuildRequires:	libssh-devel >= 0.4
 BuildRequires:	libxkbfile-devel
 BuildRequires:	intltool >= 0.35.0
-BuildRequires:	libtelepathy-glib-devel
+BuildRequires:	libtelepathy-glib-devel >= 0.9.0
 BuildRequires:	freerdp-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
