@@ -1,7 +1,7 @@
 Summary:	A set of plugins for remmina
 Name:		remmina-plugins
-Version:	0.9.1
-Release:	%mkrel 2
+Version:	0.9.2
+Release:	%mkrel 1
 License:	GPLv2
 Group:		Networking/Remote access
 Url:		http://remmina.sourceforge.net/
