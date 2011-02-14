@@ -1,7 +1,7 @@
 Summary:	A set of plugins for remmina
 Name:		remmina-plugins
 Version:	0.9.2
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv2
 Group:		Networking/Remote access
 Url:		http://remmina.sourceforge.net/
@@ -13,7 +13,7 @@ BuildRequires:	gtk2-devel >= 2.16
 BuildRequires:	zlib-devel
 BuildRequires:	jpeg-devel
 BuildRequires:	gnutls-devel
-BuildRequires:	libssh-devel >= 0.4
+BuildRequires:	libssh-devel >= 1:0.4
 BuildRequires:	libxkbfile-devel
 BuildRequires:	intltool >= 0.35.0
 BuildRequires:	libtelepathy-glib-devel >= 0.9.0
