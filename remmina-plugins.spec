@@ -1,11 +1,12 @@
 Summary:	A set of plugins for remmina
 Name:		remmina-plugins
 Version:	0.9.2
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	GPLv2
 Group:		Networking/Remote access
 Url:		http://remmina.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/project/remmina/%{version}/%{name}-%{version}.tar.gz
+Patch0:		libssh-0.5-compat.patch
 Requires:	remmina >= 0.9
 Suggests:	nxproxy
 BuildRequires:	remmina-devel >= 0.9
@@ -25,6 +26,7 @@ A set of plugins for remote desktop client - remmina.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure2_5x
