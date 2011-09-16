@@ -18,7 +18,7 @@ BuildRequires:	libssh-devel >= 1:0.4
 BuildRequires:	libxkbfile-devel
 BuildRequires:	intltool >= 0.35.0
 BuildRequires:	libtelepathy-glib-devel >= 0.9.0
-%if %mkversion <=201010
+%if %mdkversion <=201010
 BuildRequires:	libfreerdp-devel
 %else
 BuildRequires:	freerdp-devel
