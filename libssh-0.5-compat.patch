@@ -1,0 +1,20 @@
+--- a/nx/remminanxsession.c
++++ b/nx/remminanxsession.c
+@@ -516,6 +516,7 @@ remmina_nx_session_send_command (RemminaNXSession *nx, const gchar *cmdfmt, ...)
+     channel_write (nx->channel, cmd, strlen (cmd));
+     g_free (cmd);
+ 
++    ssh_set_fd_towrite (nx->session);
+     channel_write (nx->channel, "\n", 1);
+ }
+
+--- a/nx/remminanxsession.c	2011-09-13 14:49:30.992201508 -0400
++++ b/nx/remminanxsession.c	2011-09-13 14:49:56.239057091 -0400
+@@ -840,6 +840,7 @@
+             {
+                 for (ptr = buffer, lenw = 0; len > 0; len -= lenw, ptr += lenw)
+                 {
++		    ssh_set_fd_towrite (nx->session);
+                     lenw = channel_write (channels[0], (char*) ptr, len);
+                     if (lenw <= 0)
+                     {
