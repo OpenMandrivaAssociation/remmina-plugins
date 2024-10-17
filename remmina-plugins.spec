@@ -4,7 +4,7 @@ Version:	0.9.2
 Release:	%mkrel 4
 License:	GPLv2
 Group:		Networking/Remote access
-Url:		http://remmina.sourceforge.net/
+Url:		https://remmina.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/project/remmina/%{version}/%{name}-%{version}.tar.gz
 Patch0:		libssh-0.5-compat.patch
 Requires:	remmina >= 0.9
