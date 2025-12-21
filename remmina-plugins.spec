@@ -9,6 +9,11 @@ Source0:	http://downloads.sourceforge.net/project/remmina/%{version}/%{name}-%{v
 Patch0:		libssh-0.5-compat.patch
 Requires:	remmina >= 0.9
 Suggests:	nxproxy
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	remmina-devel >= 0.9
 BuildRequires:	gtk2-devel >= 2.16
 BuildRequires:	zlib-devel
